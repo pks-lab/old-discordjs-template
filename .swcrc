@@ -1,0 +1,31 @@
+{
+	"exclude": [".*.tsx"],
+	"jsc": {
+		"baseUrl": ".",
+		"paths": {
+			"@/actions/*": ["./src/actions/*"],
+			"@/core/*": ["./src/core/*"]
+		},
+		"parser": {
+			"syntax": "typescript",
+			"decorators": true,
+			"dynamicImport": true,
+			"tsx": false
+		},
+		"transform": {
+			"legacyDecorator": true,
+			"decoratorMetadata": true
+		},
+		"target": "es2018",
+		"keepClassNames": true,
+		"loose": true
+	},
+	"module": {
+		"type": "commonjs",
+		"strict": true,
+		"strictMode": true,
+		"lazy": false,
+		"noInterop": false
+	},
+	"sourceMaps": true
+}

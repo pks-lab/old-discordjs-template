@@ -1,0 +1,32 @@
+{
+  "name": "codemi-discord-bot",
+  "version": "1.0.0",
+  "description": "Just having fun creating Discord bots! :D",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "swc ./src/ -d dist",
+    "dev": "ts-node-dev -r tsconfig-paths/register src/index.ts",
+    "script:commands": "ts-node-dev scripts/update-commands.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "convict": "^6.2.4",
+    "cross-fetch": "^3.1.4",
+    "discord.js": "13.5.0",
+    "dotenv": "10.0.0",
+    "luxon": "^3.2.1"
+  },
+  "devDependencies": {
+    "@discordjs/rest": "0.2.0-canary.0",
+    "@swc/cli": "0.1.55",
+    "@swc/core": "1.2.126",
+    "@types/convict": "^6.1.1",
+    "@types/luxon": "^3.2.0",
+    "@types/node": "16.11.19",
+    "discord-api-types": "0.26.1",
+    "localtunnel": "2.0.2",
+    "ts-node-dev": "1.1.8",
+    "tsconfig-paths": "3.12.0",
+    "typescript": "4.5.4"
+  }
+}

@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"incremental": true,
+		"lib": ["dom","esnext"],
+		"baseUrl": ".",
+		"paths": {
+			"@/actions/*": ["./src/actions/*"],
+			"@/core/*": ["./src/core/*"]
+		},
+		"sourceMap": true,
+		"strict": true,
+		"noImplicitThis": false,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "ESNext",
+		"outDir": "dist",
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+		"resolveJsonModule": true,
+		"importHelpers": true
+	},
+	"exclude": [
+		"dist",
+		"out",
+		"scripts",
+		"tests",
+		"node_modules",
+		"babel.config.js",
+		"jest.config.js",
+		"**/*.spec.ts"
+	],
+	"include": [
+		"src/**/*.ts",
+		"enviroment.d.ts"
+	]
+}
